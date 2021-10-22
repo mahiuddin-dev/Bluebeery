@@ -1,0 +1,615 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Hello, world!</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'assets/favicon.ico' %}">
+  <!-- CSS Blueberry Template -->
+  <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/aos/dist/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/vendor/slick-carousel/slick/slick.css' %}"/>
+</head>
+<body>
+
+    
+<!-- ========== HEADER ========== -->
+<header id="header" class="header header-sticky-top-lg">
+  <div class="header-section">
+    <div id="logoAndNav" class="container">
+      <!-- Nav -->
+      <nav class="js-mega-menu navbar navbar-expand-lg">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#" aria-label="Blueberry">
+          <img src="{% static 'assets/svg/logos/logo.svg' %}" alt="Logo">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Responsive Toggle Button -->
+        <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navBar"
+                data-toggle="collapse"
+                data-target="#navBar">
+          <span class="navbar-toggler-default">
+            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+            </svg>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+            </svg>
+          </span>
+        </button>
+        <!-- End Responsive Toggle Button -->
+
+        <!-- Navigation -->
+        <div id="navBar" class="collapse navbar-collapse">
+          <div class="navbar-body header-sticky-top-inner">
+            <ul class="navbar-nav">
+              <!-- Home -->
+              <li class="hs-has-mega-menu navbar-nav-item">
+                <a id="homeMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Landings</a>
+              </li>
+              <!-- End Home -->
+
+              <!-- Pages -->
+              <li class="hs-has-sub-menu navbar-nav-item">
+                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Pages</a>
+              </li>
+              <!-- End Pages -->
+
+              <!-- Docs -->
+              <li class="hs-has-mega-menu navbar-nav-item"
+              data-event="hover"
+              data-animation-in="slideInUp"
+              data-animation-out="fadeOut"
+              data-max-width="722px"
+              data-position="right">
+                <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Docs</a>
+
+                <!-- Docs - Submenu -->
+                <div class="hs-mega-menu dropdown-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
+                  <!-- Promo Item -->
+                  <div class="navbar-promo-item">
+                    <a class="navbar-promo-link" href="#">
+                      <div class="media align-items-center">
+                        <img class="navbar-promo-icon" src="{% static 'assets/svg/icons/icon-2.svg' %}" alt="SVG">
+                        <div class="media-body">
+                          <span class="navbar-promo-title">
+                            Documentation
+
+                          </span>
+                          <small class="navbar-promo-text">Development guides</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Promo Item -->
+
+
+                </div>
+                <!-- End Docs - Submenu -->
+              </li>
+              <!-- End Docs -->
+
+              <!-- Button -->
+              <li class="navbar-nav-last-item">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="">
+                  Buy Now
+                </a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+        </div>
+        <!-- End Navigation -->
+      </nav>
+      <!-- End Nav -->
+    </div>
+  </div>
+</header>
+<!-- ========== END HEADER ========== -->
+
+
+<!-- Hero Section -->
+<div class="position-relative bg-img-hero">
+  <div class="container space-top-3 space-bottom-lg-3">
+    <div class="row justify-content-lg-between align-items-lg-center pt-lg-5">
+      <div class="col-lg-5">
+        <!-- Info -->
+        <div class="mb-5">
+          <h1 class="display-4 mb-3">The ad that manages itself</h1>
+          <p class="lead">Automate all your ad management strategies for Facebook, Google and Snapchat Ads in a single interface.</p>
+        </div>
+        <!-- End Info -->
+
+        <!-- Form -->
+        <form class="js-validate mb-7">
+          <div class="form-row">
+            <div class="col-sm col-md-6 col-lg mb-2">
+              <div class="js-form-message">
+                <label class="sr-only" for="signupSrEmail">Your email</label>
+                <div class="input-group">
+                  <input type="email" class="form-control" name="email" id="signupSrEmail" placeholder="Your email" aria-label="Your email" required
+                         data-msg="Please enter a valid email address.">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-auto">
+              <button type="submit" class="btn btn-primary btn-block">Request Demo</button>
+            </div>
+          </div>
+        </form>
+        <!-- End Form -->
+
+        <span class="d-block small font-weight-bold text-cap mb-2">Blueberry partners:</span>
+
+        <!-- Clients -->
+        <div class="row">
+          <div class="col-4 col-sm-3 my-2">
+            <img class="max-w-11rem max-w-md-13rem mx-auto" src="{% static 'assets/svg/clients-logo/airbnb.svg' %}" alt="Image Description">
+          </div>
+
+        </div>
+        <!-- End Clients -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <div class="col-lg-6 position-lg-absolute bottom-0 right-0 transform-rotate-5 mr-lg-n11">
+    <div class="row align-items-end mx-n2">
+      <div class="col px-2 mb-5">
+        <div class="mb-3" data-aos="fade-up">
+          <img class="img-fluid shadow-lg rounded" src="{% static 'assets/img/407x472/img2.jpg' %}" alt="Image Description">
+        </div>
+        <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+          <img class="img-fluid shadow-lg rounded" src="{% static 'assets/img/407x472/img3.jpg' %}" alt="Image Description">
+        </div>
+      </div>
+
+      <div class="col px-2">
+        <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
+          <img class="img-fluid shadow-lg rounded" src="{% static 'assets/img/407x520/img1.jpg' %}" alt="Image Description">
+        </div>
+
+      </div>
+
+      <div class="col px-2 mb-7">
+        <div class="mb-3" data-aos="fade-up" data-aos-delay="400">
+          <img class="img-fluid shadow-lg rounded" src="{% static 'assets/img/407x472/img6.jpg' %}" alt="Image Description">
+        </div>
+        <div class="mb-3" data-aos="fade-up" data-aos-delay="500" data-aos-offset="-50">
+          <img class="img-fluid shadow-lg rounded" src="{% static 'assets/img/407x115/img1.jpg' %}" alt="Image Description">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Gallery -->
+</div>
+<!-- End Hero Section -->
+
+  
+<!-- Features Section -->
+<div class="overflow-hidden">
+  <div class="container space-2 space-lg-3">
+    <!-- Title -->
+    <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+      <span class="d-block small font-weight-bold text-cap mb-2">How we work</span>
+      <h2>Bring your ideas to life and share your vision with concrete elements</h2>
+    </div>
+    <!-- End Title -->
+
+    <div class="w-md-80 mx-md-auto">
+      <div class="row justify-content-lg-center align-items-md-center">
+        <div class="col-md-5 mb-7 mb-md-0">
+          <!-- Features -->
+          <div class="media mb-4">
+            <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body text-dark">
+              Easy & fast designing
+            </div>
+          </div>
+          <div class="media mb-4">
+            <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body text-dark">
+              Powerful features
+            </div>
+          </div>
+          <div class="media mb-4">
+            <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body text-dark">
+              Advanced HTML/CSS editing
+            </div>
+          </div>
+          <div class="media mb-4">
+            <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body text-dark">
+              React-Native Development
+            </div>
+          </div>
+          <div class="media mb-4">
+            <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body text-dark">
+              User Experience Design
+            </div>
+          </div>
+          <a class="media" href="#">
+            <span class="icon icon-xs icon-soft-primary icon-circle mr-3">
+              <i class="fas fa-ellipsis-h"></i>
+            </span>
+            <div class="media-body">
+              all our services
+            </div>
+          </a>
+          <!-- End Features -->
+        </div>
+
+        <div class="col-md-7 col-lg-5">
+          <div class="position-relative">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <figure class="w-100 max-w-6rem mb-4">
+                  <img class="img-fluid" src="{% static 'assets/svg/icons/icon-2.svg' %}" alt="SVG">
+                </figure>
+                <h3>We tackle the challenges start-ups face</h3>
+                <p>Besides working with start-up enterprises as a partner for digitalization, we have built enterprise products for common pain points that we have encountered in various products and projects.</p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- SVG Elements -->
+            <figure class="max-w-19rem w-100 position-absolute bottom-0 right-0 z-index-n1">
+              <div class="mb-n7 mr-n7">
+                <img class="img-fluid" src="{% static 'assets/svg/components/dots-2.svg' %}" alt="Image Description">
+              </div>
+            </figure>
+            <!-- End SVG Elements -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Features Section -->
+
+
+
+<!-- Features Section -->
+<div class="container space-2">
+  <div class="row justify-content-lg-between">
+    <div class="col-lg-5 order-lg-2 pl-lg-0">
+      <div class="bg-img-hero h-100 min-h-450rem rounded" style="background-image: url('static/assets/img/900x900/img19.jpg');"></div>
+    </div> 
+
+    <div class="col-lg-6 order-lg-1">
+      <div class="pt-8 pb-lg-8">
+        <!-- Title -->
+        <div class="mb-5 mb-md-7">
+          <h2 class="mb-3">The powerful and flexible theme for all kinds of businesses</h2>
+          <p>Whether you're creating a subscription service, an on-demand marketplace, an e-commerce store, or a portfolio showcase, Blueberry's unmatched functionality help you create the best possible product for your users.</p>
+        </div>
+        <!-- End Title -->
+
+        <div class="row">
+          <div class="col-6 mb-3 mb-md-5">
+            <div class="pr-lg-4">
+              <span class="js-counter h2 text-primary">300</span>
+              <span class="h2 text-primary">+</span>
+              <p>Build a professional website with corporate and SaaS based components.</p>
+            </div>
+          </div>
+
+          <div class="col-6 mb-3 mb-md-5">
+            <div class="pr-lg-4">
+              <span class="js-counter h2 text-primary">70</span>
+              <span class="h2 text-primary">+</span>
+              <p>Take advantage of more than 70 pages designed with mobile-first in mind.</p>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="pr-lg-4">
+              <span class="js-counter h2 text-primary">95</span>
+              <span class="h2 text-primary">%</span>
+              <p>of our customers rated 5-star our themes over 5 years.</p>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="pr-lg-4">
+              <span class="js-counter h2 text-primary">20</span>
+              <span class="h2 text-primary">+</span>
+              <p>We continually deploy improvements to Blueberry, which handles more than 3.5k users.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Features Section -->
+
+
+
+
+<!-- Contact Form Section -->
+<div class="container space-2">
+  <div class="row">
+    <div class="col-lg-6 mb-9 mb-lg-0">
+      <div class="mb-5">
+        <h1 class="display-4">Get in touch</h1>
+        <p>We'd love to talk about how we can help you.</p>
+      </div>
+
+      <!-- Leaflet -->
+      <div id="mapExample2" class="min-h-300rem mb-5"
+           data-hs-leaflet-options='{
+             "map": {
+               "scrollWheelZoom": false,
+               "coords": [23.8130, 90.4222]
+             },
+             "marker": [
+               {
+                 "coords": [23.8130, 90.4222],
+                 "icon": {
+                   "iconUrl": "static/assets/svg/components/map-pin.svg",
+                   "iconSize": [50, 45]
+                 },
+                 "popup": {
+                   "text": "Jamuna future park!"
+                 }
+               }
+             ]
+            }'></div>
+      <!-- End Leaflet -->
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="mb-3">
+            <span class="d-block h5 mb-1">Call us:</span>
+            <span class="d-block text-body font-size-1">+88 01777-424142</span>
+          </div>
+
+          <div class="mb-3">
+            <span class="d-block h5 mb-1">Email us:</span>
+            <span class="d-block text-body font-size-1">nimu@example.com</span>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="mb-3">
+            <span class="d-block h5 mb-1">Address:</span>
+            <span class="d-block text-body font-size-1">Bashundhara, Dhaka</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="ml-lg-5">
+        <!-- Form -->
+        <form class="js-validate card shadow-lg mb-4">
+          <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
+            <h2 class="h4 mb-0">General Enquiries</h2>
+          </div>
+
+          <div class="card-body p-4 p-md-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Form Group -->
+                <div class="js-form-message form-group">
+                  <label for="firstNameExample1" class="input-label">First name</label>
+                  <input type="text" class="form-control" name="firstNameExample1" id="firstNameExample1" placeholder="Nimu" aria-label="Nimu" required
+                         data-msg="Please enter first your name">
+                </div>
+                <!-- End Form Group -->
+              </div>
+
+              <div class="col-sm-6">
+                <!-- Form Group -->
+                <div class="js-form-message form-group">
+                  <label for="lastNameExample1" class="input-label">Last name</label>
+                  <input type="text" class="form-control" name="lastNameExample1" id="lastNameExample1" placeholder="Nimu" aria-label="Nimu" required
+                         data-msg="Please enter last your name">
+                </div>
+                <!-- End Form Group -->
+              </div>
+
+              <div class="col-sm-12">
+                <!-- Form Group -->
+                <div class="js-form-message form-group">
+                  <label for="emailAddressExample1" class="input-label">Email address</label>
+                  <input type="email" class="form-control" name="emailAddressExample1" id="emailAddressExample1" placeholder="nimu@pixeel.com" aria-label="nimu@pixeel.com" required
+                         data-msg="Please enter a valid email address">
+                </div>
+                <!-- End Form Group -->
+              </div>
+
+              <div class="col-sm-12">
+                <!-- Form Group -->
+                <div class="js-form-message form-group">
+                  <label for="message" class="input-label">Message</label>
+                  <div class="input-group">
+                    <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hi there, I would like to ..." aria-label="Hi there, I would like to ..." required
+                              data-msg="Please enter a reason."></textarea>
+                  </div>
+                </div>
+                <!-- End Form Group -->
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-block btn-primary transition-3d-hover">Submit</button>
+          </div>
+        </form>
+        <!-- End Form -->
+
+        <div class="text-center">
+          <p class="small">We'll get back to you in 1-2 business days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Contact Form Section -->
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="container space-2 text-center">
+  <!-- Logo -->
+  <a class="d-inline-flex align-items-center mb-3" href="#" aria-label="Blueberry">
+    <img class="brand" src="{% static 'assets/svg/logos/logo.svg' %}" alt="Logo">
+  </a>
+  <!-- End Logo -->
+
+  <p class="font-size-1 mb-1">We're part of the <a href="#">Pixeel Ltd.</a> family along with <a href="">Nimusoft</a>.</p>
+  <p class="font-size-1">© Blueberry. 2020 Nimusoft. All rights reserved.</p>
+
+  <!-- Social Networks -->
+  <ul class="list-inline mb-0">
+    <li class="list-inline-item mb-2 mb-sm-0">
+      <a class="btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="#">
+        <i class="fab fa-dribbble"></i>
+      </a>
+    </li>
+    <li class="list-inline-item mb-2 mb-sm-0">
+      <a class="btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li class="list-inline-item mb-2 mb-sm-0">
+      <a class="btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="#">
+        <i class="fab fa-medium-m"></i>
+      </a>
+    </li>
+    <li class="list-inline-item mb-2 mb-sm-0">
+      <a class="btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="#">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+    <li class="list-inline-item mb-2 mb-sm-0">
+      <a class="btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li class="list-inline-item mb-2 mb-sm-0">
+      <a class="btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  </ul>
+  <!-- End Social Networks -->
+</footer>
+<!-- ========== END FOOTER ========== -->
+
+
+<!-- JS Global Compulsory -->
+<script src="{% static 'assets/vendor/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendor/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/hs.core.js' %}"></script>
+<script src="{% static 'assets/vendor/hs-header/dist/hs-header.min.js' %}"></script>
+<script src="{% static 'assets/vendor/aos/dist/aos.js' %}"></script>
+<script src="{% static 'assets/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
+<script src="{% static 'assets/js/hs.validation.js' %}"></script>
+<script src="{% static 'assets/vendor/hs-counter/dist/hs-counter.min.js' %}"></script>
+<script src="{% static 'assets/vendor/appear.js' %}"></script>
+<script src="{% static 'assets/vendor/circles/circles.min.js' %}"></script>
+<script src="{% static 'assets/js/hs.circles.js' %}"></script>
+
+<!-- JS Blueberry -->
+<script src="{% static 'assets/js/hs.slick-carousel.js' %}"></script>
+<script src="{% static 'assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+
+
+<script>
+  $(document).on('ready', function () {
+    // initialization of leaflet
+    $('#mapExample2').each(function () {
+      var leaflet = $.HSCore.components.HSLeaflet.init($(this)[0]);
+
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        id: 'mapbox/light-v9'
+      }).addTo(leaflet);
+    });
+
+    // initialization of form validation
+    $('.js-validate').each(function () {
+      var validation = $.HSCore.components.HSValidation.init($(this));
+    });
+  });
+</script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of counter
+    $('.js-counter').each(function() {
+      var counter = new HSCounter($(this)).init();
+    });
+  });
+</script>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of counter
+    $('.js-counter').each(function() {
+      var counter = new HSCounter($(this)).init();
+    });
+  });
+</script>
+
+
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of circles
+    $('.js-circle').each(function () {
+      var circle = $.HSCore.components.HSCircles.init($(this));
+    });
+  });
+</script>
+
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of form validation
+    $('.js-validate').each(function() {
+      $.HSCore.components.HSValidation.init($(this));
+    });
+
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: true
+    });
+  });
+</script>
+
+</body>
+</html>
